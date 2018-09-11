@@ -21,16 +21,16 @@ The code is/will be split into Systems. Each system will control one thing. For 
      - [ ] Cutscenes?
  - [ ] Controls
      - [ ] Keybinds
-      - [ ] Virtual controller?
+         - [ ] Virtual controller?
  - [ ] Menu
      - [ ] Drawing menus on screen
      - [ ] Possibly HUDs?
      - [ ] Callback functions
-      - [ ] Update
-       - [ ] interface control system shorthand
-      - [ ] Draw
-       - [ ] interface display systems shorthand
+         - [ ] Update 
+             - [ ] interface control system shorthand
+         - [ ] Draw 
+             - [ ] interface display systems shorthand
  - [ ] Interactability
       - [ ] Global table?
-      - [ ] Assign a system's functions shorthand
-       - [ ] setfenv?
+      - [ ] Assign a system's functions shorthand 
+          - [ ] setfenv?
