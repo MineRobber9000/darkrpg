@@ -8,21 +8,29 @@ function love.load()
 	log("init","love.")
 end
 
+--BEGIN CODE HOOKS FOR GAME
+x=1
+y=1
+
 function _update()
 	if love.keyboard.isDown("escape") then love.event.quit() end
+	if love.keyboard.isDown("left") and x>=0 then x=x-1 end
+	if love.keyboard.isDown("right") and x<(256-4) then x=x+1 end
+	if love.keyboard.isDown("up") and y>=0 then y=y-1 end
+	if love.keyboard.isDown("down") and y<(240-4) then y=y+1 end
 end
 
 function _draw()
 	graphics.cls(1)
-	graphics.rectfill(1,1,4,4,15)
+	graphics.rectfill(x,y,4,4,15)
 end
-
-t=0
+--END CODE HOOKS FOR GAME
+__time__=0
 function love.update(dt)
-	t = t + dt
-	while t > (1/CONFIG.framerate) do
+	__time__ = __time__ + dt
+	while __time__ > (1/CONFIG.framerate) do
 		_update()
-		t = t - dt
+		__time__ = __time__ - (1/CONFIG.framerate)
 	end
 end
 
