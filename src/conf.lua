@@ -11,7 +11,7 @@ function love.conf(t)
  
     t.audio.mixwithsystem = true        -- Keep background music playing when opening LOVE (boolean, iOS and Android only)
  
-    t.scalefactor = 2.5
+    t.scalefactor = 2
     t.framerate = 30
 
     t.window.title = "DarkRPG"          -- The window title (string)
